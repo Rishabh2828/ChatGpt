@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/mainbg"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity">
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerview_chat"
+        android:layout_above="@+id/bottom_layout"/>
+
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome To Rishabh ChatGPT"
+        android:layout_centerInParent="true"
+        android:textSize="22dp"
+        android:textColor="@color/white"
+        android:gravity="center"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_layout"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true">
+
+
+        <EditText
+            android:layout_toLeftOf="@+id/send_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/message_edittext"
+            android:hint="Ask Your Questions..."
+            android:layout_centerInParent="true"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:background="@drawable/background2"
+            android:padding="16dp"/>
+
+        <ImageButton
+            android:id="@+id/send_btn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+
+            android:layout_centerInParent="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/background2"
+            android:src="@drawable/baseline_send_24" />
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
